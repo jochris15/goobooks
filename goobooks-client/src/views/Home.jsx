@@ -40,7 +40,6 @@ export default function Home({ url }) {
 
         try {
             const { data } = await axios.get(newURL);
-            console.log(data, "data baru <<<<");
             setBooks(data);
             setQuery(newQuery);
         } catch (error) {
@@ -98,7 +97,7 @@ export default function Home({ url }) {
                         <img src={gearLoad} />
                     </div>
                 ) : (
-                    <main main className="grid grid-cols-3 gap-5 px-10 my-8 bg-base-100">
+                    <main className="grid grid-cols-3 gap-5 px-10 my-8 bg-base-100">
                         {books.map(book => {
                             return <Card key={book.id} book={book} url={url} />
                         })}
