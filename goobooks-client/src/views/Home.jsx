@@ -16,7 +16,6 @@ export default function Home({ url }) {
         try {
             setLoading(true)
             const { data } = await axios.get(`${url}/books`);
-            console.log(data, "data awal <<<<<");
             setBooks(data);
         } catch (error) {
             console.log(error);
@@ -66,7 +65,7 @@ export default function Home({ url }) {
 
     return (
         <>
-            <div id="PAGE-HOME" className="">
+            <div id="PAGE-HOME" className="p-3">
                 <header className="pt-5 flex justify-center items-center">
                     {/* search */}
                     <form className="flex justify-center items-center">
@@ -99,7 +98,7 @@ export default function Home({ url }) {
                         <img src={gearLoad} />
                     </div>
                 ) : (
-                    <main main className="grid grid-cols-4 gap-5 px-10 my-8 bg-base-100">
+                    <main main className="grid grid-cols-3 gap-5 px-10 my-8 bg-base-100">
                         {books.map(book => {
                             return <Card key={book.id} book={book} url={url} />
                         })}

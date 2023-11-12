@@ -7,7 +7,7 @@ class Controller {
             let { q } = req.query
 
             if (!q) {
-                q = "harry"
+                q = "naruto"
             }
 
             const { data } = await axios.get(`https://www.googleapis.com/books/v1/volumes?q=${q}`)
