@@ -2,7 +2,7 @@ import { createBrowserRouter, redirect } from "react-router-dom";
 import Parent from "../views/Parent";
 import Home from "../views/Home";
 import Wishlist from "../views/Wishlist";
-const SERVER_URL = "http://34.87.75.188";
+const SERVER_URL = "https://server.jochris15.online";
 
 const router = createBrowserRouter([
     {
