@@ -40,7 +40,7 @@ export default function Card({ wishlist, fetchWishlist, url }) {
                     fullSymbol="fa fa-star"
                 />
                 <div className="items-end">
-                    <button onClick={() => { removeWishlist(wishlist.id) }} className="btn btn-primary">Remove</button>
+                    <button onClick={() => { removeWishlist(wishlist.id) }} className="btn btn-accent text-gray-800">Remove</button>
                 </div>
             </div>
         </div>

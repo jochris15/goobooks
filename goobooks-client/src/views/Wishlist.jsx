@@ -2,7 +2,7 @@ import WishlistCard from "../components/WishlistCard"
 import axios from 'axios';
 import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
-import gearLoad from "./assets/Gear-0.2s-200px.svg"
+import gearLoad from "./assets/Gear-0.2s-264px.svg"
 
 export default function Wishlist({ url }) {
     const [wishlist, setWishlist] = useState([]);
@@ -42,7 +42,7 @@ export default function Wishlist({ url }) {
         <>
             <>
                 {loading ? (
-                    <div className="mt-32 flex justify-center items-center">
+                    <div className="mt-28 flex justify-center items-center">
                         <img src={gearLoad} />
                     </div>
                 ) : (

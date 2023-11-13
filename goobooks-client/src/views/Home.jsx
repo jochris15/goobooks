@@ -2,7 +2,7 @@ import Card from "../components/Card";
 import axios from 'axios';
 import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
-import gearLoad from "./assets/Gear-0.2s-200px.svg"
+import gearLoad from "./assets/Gear-0.2s-264px.svg"
 
 export default function Home({ url }) {
     const [books, setBooks] = useState([]);
@@ -72,7 +72,7 @@ export default function Home({ url }) {
                             type="search"
                             name="search"
                             placeholder="Search"
-                            className="input input-bordered input-primary w-24 md:w-auto mx-1 input-sm"
+                            className="input input-bordered input-accent w-24 md:w-auto mx-1 input-sm"
                             onChange={searchOnChange}
                         />
                         <button onClick={applySearch} type="submit" className="btn btn-ghost btn-circle" >

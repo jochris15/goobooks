@@ -38,7 +38,7 @@ export default function Card({ book, url }) {
                     fullSymbol="fa fa-star"
                 />
                 <div className="items-end">
-                    <button onClick={() => addToWishlist(book.id)} className="btn btn-primary">Add to Wishlist</button>
+                    <button onClick={() => addToWishlist(book.id)} className="btn btn-accent text-gray-800">Add to Wishlist</button>
                 </div>
             </div>
         </div>
