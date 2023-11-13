@@ -8,7 +8,7 @@ export default function Nav() {
                     <span className="text-blue-500">G </span>
                     <span className="text-red-500">O </span>
                     <span className="text-yellow-500">O </span>
-                    <span className="text-gray-300">B O O K S</span>
+                    <span className="text-accent">B O O K S</span>
                 </Link>
             </div>
             <div className="navbar-center">
